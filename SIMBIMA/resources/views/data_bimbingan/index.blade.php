@@ -11,6 +11,8 @@
     <link href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" rel=" stylesheet">
     <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet">
     <link href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
 
     <style>
         /*Overrides for Tailwind CSS */
@@ -141,10 +143,10 @@
                                         accept-charset="UTF-8" style="display:inline">
                                         {{ method_field('DELETE') }}
                                         {{ csrf_field() }}
-                                        <button type="submit" class="btn btn-danger" title="Delete Student"
-                                            onclick="return confirm(&quot;Confirm delete?&quot;)"><i
-                                                class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
-                                    </form>
+                                        <button type="submit" class="btn btn-danger" title="Delete Student" onclick="return confirm('Confirm delete?')">
+                                            <i class="fa fa-trash-o" aria-hidden="true"></i> Delete
+                                        </button>                                        
+                                                </form>
                                 </td>
                             </tr>
                         @endforeach
