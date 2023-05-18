@@ -24,3 +24,7 @@ Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login', [LoginController::class, 'login']);
 // Route ini akan mengarahkan ke halaman logout
 Route::get('/logout', [LoginController::class, 'destroy']);
+
+Route::resource("data_bimbingan", App\Http\Controllers\dataController::class);
+
+
