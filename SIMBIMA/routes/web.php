@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\DB;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,3 +29,12 @@ Route::get('/logout', [LoginController::class, 'destroy']);
 Route::resource("data_bimbingan", App\Http\Controllers\dataController::class);
 
 
+Route::get('/barchart/Data', function(){
+    $data = DB::table('data_bimbingan')->get();
+    return response()->json($data);
+
+});
+
+Route::get('/barchart', function(){
+    return view('koordinator.barchart');
+});
