@@ -2,6 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\PagesController;
+use App\Http\Controllers\auth\LoginController;
+use App\Http\Controllers\dataController;
+
+
 
 /*
 |--------------------------------------------------------------------------
